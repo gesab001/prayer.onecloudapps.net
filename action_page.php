@@ -2,7 +2,7 @@
 
 include "../../inc/dbinfo.inc";
 
-$comment = "Father, which art in heaven "  .  $_POST["comment"]  .  " in the name of Jesus, Amen" ;
+$comment = "Father, which art in heaven "  .  $_REQUEST["comment"]  .  " in the name of Jesus, Amen" ;
 echo $comment;
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
